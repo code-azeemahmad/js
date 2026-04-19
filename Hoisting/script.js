@@ -26,3 +26,27 @@ if (true) {
   // console.log(website);
 }
 // console.log(username);
+
+addOne(1);
+function addOne (num) {
+  return num + 1;
+}
+
+// addTwo(1);
+const addTwo = function (num) {   // Function Expression (assigned to variable)
+  return num + 2;
+};
+
+/*________________________________________________________________
+| Type                 | Hoisted? | Usable before definition?  |
+| -------------------- | -------- | -------------------------  |
+| Function declaration |   Yes    |           Yes              |
+| Function expression  |   No     |           No               |
+|______________________|__________|____________________________|
+*/
+
+/*
+function addOne() → fully hoisted
+const addTwo = function() → variable hoisted only (TDZ)
+let/const → no access before declaration
+*/
