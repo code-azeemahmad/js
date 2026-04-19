@@ -26,3 +26,17 @@ function addTwoNumbers(num1, num2) {
 
 const num3 = addTwoNumbers(3, 4);
 console.log(num3);
+
+function logInUserMessage(username) {
+    if (username === undefined) {
+        console.log("Please! Enter the username");
+        return;
+    }
+    return `${username} just logged in`;
+}
+
+console.log(logInUserMessage('azeem'));
+console.log(logInUserMessage());    // undefined just logged in, not null, use default parameters
+
+
+// undefined and "" are assumed to be false
