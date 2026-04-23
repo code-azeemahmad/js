@@ -20,3 +20,7 @@ title.setAttribute('class', 'heading bg-green');  // set multiple attributes
 title.style.backgroundColor = 'green';
 title.style.padding = '15px';
 title.style.borderRadius = '10px';
+
+title.innerText;  //  returns only the unhidden text
+title.textContent;  // returns the entire text even if style="display: none;
+title.innerHTML;  // returns the text + htmt
