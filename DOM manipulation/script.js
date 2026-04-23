@@ -42,4 +42,10 @@ let h = document.querySelectorAll('h1');  // returns node list even for a single
 // h.style.backgroundColor = 'green';  // X
 h[0].style.backgroundColor = 'green';
 
+let list = document.getElementsByClassName(`list-item`);  // returns HTML collection(different from array, no forEach, filter, map, reduce)
+
+// convert NodeList and HTMLCollection to Array
+let list = document.getElementsByClassName(`list-item`);
+let lis = Array.from(list);
+lis.forEach((c)=> c.style.backgroundColor = "green");
 
