@@ -1,0 +1,15 @@
+Javascript
+  --> Synchronous
+  --> Single threaded
+Executed Context
+  --> Execute one line of code at a time
+    console.log(`1`);
+    console.log(`2`);
+
+Javascript engine = Call stack and  Memory Heap
+
+Blocking code vs Non blocking code (nothing is good or bad, it all depends on use cases)
+Blocking code: block the flow of program --> read file sync
+Non blocking code: does not block execution --> read file async
+
+// https://medium.com/@ignatovich.dm/the-javascript-event-loop-explained-with-examples-d8f7ddf0861d
